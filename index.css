@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    text-transform: capitalize;
+}
+
+.nav-item ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-item ul li {
+    padding: 15px;
+}
+
+.header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+        0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.logo {
+    height: 60px;
+    width: 150px;
+}
+
+.card {
+    border: 1px solid transparent;
+    width: 280px;
+    padding: 10px;
+    margin-top: 2%;
+}
+
+.card:hover {
+    border-color: #d3d5df;
+    box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+    cursor: pointer;
+}
+
+.card img {
+    height: 160px;
+    width: 254px;
+}
+
+.card .cusines {
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.card .rating {
+    background-color: #db7c38;
+    color: #fff;
+    padding: 3px 5px;
+    max-width: max-content;
+    margin-top: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.card .rating::before {
+    content: url(./src/image/star.png);
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search-container {
+    margin: 20px;
+}
+
+.search-input {
+    border: unset;
+    border-bottom: 1px solid #0000001a;
+    padding: 10px;
+}
